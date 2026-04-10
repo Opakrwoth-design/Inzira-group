@@ -737,89 +737,108 @@
     <!-- ===================== END CALL TO ACTION SECTION ===================== -->
 
     <!-- ===================== FOOTER ===================== -->
-    <footer class="relative w-full pb-10 px-10" style="background-color: #1C343D;">
+<footer class="relative w-full pb-10 px-10 overflow-hidden">
 
-        <div class="flex flex-col gap-12 pt-16">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="assets/img/imigongo.jpeg" alt="Footer Background"
+            class="w-full h-full object-cover object-center" />
+        <div class="absolute inset-0 bg-[#1C343D]/85"></div>
+    </div>
 
-            <!-- Top: Logo + Nav + Socials -->
-            <div class="flex flex-col md:flex-row justify-between gap-10">
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col gap-12 pt-16">
 
-                <!-- Logo + Tagline -->
-                <div class="flex flex-col gap-3 max-w-xs">
-                    <a href="/index.html"
-                        class="flex font-display items-center gap-2 text-brand-cream font-semibold text-xl tracking-wide">
-                        INZIRA GROUP
-                    </a>
-                    <p class="text-white/50 text-sm leading-relaxed">
-                        Find Your Future, Anywhere. Connecting exceptional talent with forward-thinking organizations
-                        across global markets.
-                    </p>
-                </div>
+        <!-- Top: Logo + Nav + Socials -->
+        <div class="flex flex-col md:flex-row justify-between gap-10">
 
-                <!-- Nav Links -->
-                <div class="flex flex-col gap-3">
-                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Navigation</span>
-                    <a href="/about.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">About</a>
-                    <a href="/services.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Services</a>
-                    <a href="/approach.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Approach</a>
-                    <a href="/blogs.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
-                </div>
-
-                <!-- Services -->
-                <div class="flex flex-col gap-3">
-                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Services</span>
-                    <a href="/services.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Talent
-                        Placement</a>
-                    <a href="/services.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Executive
-                        Search</a>
-                    <a href="/services.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Career
-                        Coaching</a>
-                    <a href="/services.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Training &
-                        Development</a>
-                </div>
-
-                <!-- Contact -->
-                <div class="flex flex-col gap-3">
-                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Contact</span>
-                    <a href="mailto:admin@inziragroup.com"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">info@inziragroup.com</a>
-                    <a href="/contact.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Work
-                        With
-                        Us</a>
-                    <a href="/contact.html"
-                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">General
-                        Inquiries</a>
-                </div>
-
+            <!-- Logo + Tagline -->
+            <div class="flex flex-col gap-3 max-w-xs">
+                <a href="/index.html"
+                    class="flex font-display items-center gap-2 text-brand-cream font-semibold text-xl tracking-wide">
+                    INZIRA GROUP
+                </a>
+                <p class="text-white/50 text-sm leading-relaxed">
+                    Find Your Future, Anywhere. Connecting exceptional talent with forward-thinking organizations
+                    across global markets.
+                </p>
             </div>
 
-            <!-- Divider -->
-            <div class="w-full border-t border-white/10"></div>
+            <!-- Nav Links -->
+            <div class="flex flex-col gap-3">
+                <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Navigation</span>
+                <a href="/about.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">About</a>
+                <a href="/services.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Services</a>
+                <a href="/approach.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Approach</a>
+                <a href="/blogs.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
+            </div>
 
-            <!-- Bottom: Copyright -->
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                <p class="text-white/30 text-xs">© 2026 Inzira Group. All rights reserved.</p>
-                <div class="flex items-center gap-6">
-                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Privacy
-                        Policy</a>
-                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Terms
-                        of Use</a>
-                </div>
+            <!-- Services -->
+            <div class="flex flex-col gap-3">
+                <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Services</span>
+                <a href="/services.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">
+                    Talent Placement
+                </a>
+                <a href="/services.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">
+                    Executive Search
+                </a>
+                <a href="/services.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">
+                    Career Coaching
+                </a>
+                <a href="/services.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">
+                    Training & Development
+                </a>
+            </div>
+
+            <!-- Contact -->
+            <div class="flex flex-col gap-3">
+                <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Contact</span>
+                <a href="mailto:admin@inziragroup.com"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">
+                    info@inziragroup.com
+                </a>
+                <a href="/contact.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">
+                    Work With Us
+                </a>
+                <a href="/contact.html"
+                    class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">
+                    General Inquiries
+                </a>
             </div>
 
         </div>
 
-    </footer>
-    <!-- ===================== END FOOTER ===================== -->
+        <!-- Divider -->
+        <div class="w-full border-t border-white/10"></div>
+
+        <!-- Bottom: Copyright -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-white/30 text-xs">© 2026 Inzira Group. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href=""
+                    class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">
+                    Privacy Policy
+                </a>
+                <a href=""
+                    class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">
+                    Terms of Use
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<!-- ===================== END FOOTER ===================== -->
 
     <script src="services.js"></script>
 </body>
