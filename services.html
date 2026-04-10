@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Meta Description-->
+    <meta name="description"
+        content="Inzira Group is a boutique recruitment and human capital advisory firm bridging international standards with local execution. We connect exceptional leadership with forward-thinking organizations across global markets." />
+
+    <!--Page Icon-->
+    <link rel="icon" href="/assets/icons/page.jpeg" />
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Google Fonts - Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!--Tailwind Config-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // For the Logo and the Main Hero H1: font-display
+                        display: ["Cinzel", "serif"],
+                        // For all body text, nav links, and sub-headers: font-sans
+                        sans: ["'Public Sans'", "sans-serif"],
+                    },
+                    colors: {
+                        brand: {
+                            cream: "#f5f1ed",
+                            blue600: "#8ba9cc",
+                            blue700: "#567aad",
+                            blue800: "#2d4f82",
+                            blue900: "#203c6e",
+                            blue1000: "#1c3459",
+                            blue1100: "#111f38",
+                            gold: "#E8A94A",
+                        },
+                    },
+                    screens: {
+                        tablet: { min: "768px", max: "1023px" },
+                    },
+                },
+            },
+
+        };
+
+    </script>
+
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .delay-2 {
+            transition-delay: 0.25s;
+        }
+
+        .delay-3 {
+            transition-delay: 0.4s;
+        }
+
+        .delay-4 {
+            transition-delay: 0.55s;
+        }
+
+        .delay-5 {
+            transition-delay: 0.7s;
+        }
+
+        .delay-6 {
+            transition-delay: 0.85s;
+        }
+
+        .delay-7 {
+            transition-delay: 1.0s;
+        }
+
+        .delay-8 {
+            transition-delay: 1.15s;
+        }
+
+        /* Approach card hover transitions */
+        .card-dark {
+            background-color: #203C47;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-dark:hover {
+            background-color: #2D4F52;
+        }
+
+        .card-accent {
+            background-color: #2D4F52;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-accent:hover {
+            background-color: #1C343D;
+        }
+    </style>
+
+    <title>Our Services | Global Talent and Human Capital Solutions</title>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+    <!-- ===================== HERO + NAV SECTION ===================== -->
+    <section id="hero-section" class="relative flex flex-col overflow-hidden">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/img/three.webp" alt="Hero Background" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-[#203C47]/65"></div>
+        </div>
+
+        <!-- ===== NAVBAR ===== -->
+        <nav id="navbar" class="relative z-20 w-full transition-all duration-300">
+            <div class="flex items-center justify-between px-10 py-5">
+
+                <!-- Left: Written Logo -->
+                <a href="/index.html"
+                    class="fade-up font-display delay-1 flex items-center gap-2 text-brand-cream font-semibold text-2xl tracking-wide shrink-0 z-10">
+
+                    INZIRA GROUP
+                </a>
+
+                <!-- Middle: Nav Links (Desktop) -->
+                <ul
+                    class="fade-up delay-2 hidden md:flex items-center gap-8 text-brand-cream text-[16px] font-medium tracking-wide">
+                    <li><a href="/about.html" class="hover:text-[#E8A94A] transition-colors duration-200">About</a></li>
+                    <li><a href="/services.html"
+                            class="hover:text-[#E8A94A] transition-colors duration-200">Services</a></li>
+                    <li><a href="/approach.html"
+                            class="hover:text-[#E8A94A] transition-colors duration-200">Approach</a></li>
+                    <li><a href="/blogs.html" class="hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
+                    </li>
+                </ul>
+
+                <!-- Right: Contact Button (Desktop) -->
+                <a href="/contact.html"
+                    class="fade-up hidden md:inline-block bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-cream transition-colors duration-200 shrink-0">
+                    Contact Us
+                </a>
+
+                <!-- Hamburger Icon (Mobile) -->
+                <button id="hamburger-btn" class="fade-up delay-2 md:hidden focus:outline-none z-10"
+                    aria-label="Toggle menu">
+                    <img src="/assets/icons/menu.png" alt="Menu" class="w-7 h-7 object-contain" id="hamburger-icon" />
+                </button>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="fade-up delay-3 w-full border-t border-white/25"></div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu"
+                class="hidden flex-col items-center gap-5 py-7 px-10 md:hidden absolute top-full left-0 w-full z-50"
+                style="background-color: #203C47; backdrop-filter: blur(12px);">
+                <a href="/about.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">About</a>
+                <a href="/services.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Services</a>
+                <a href="/approach.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Approach</a>
+                <a href="/blogs.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Insights</a>
+                <a href="/contact.html"
+                    class="mt-1 bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-7 py-2 rounded-full hover:bg-brand-cream transition-colors duration-200">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+
+        <!-- ===== HERO CONTENT (AUTO HEIGHT) ===== -->
+        <div class="relative z-10 flex flex-col md:flex-row items-start justify-between gap-12 px-10 py-28 md:py-36">
+
+            <!-- LEFT SIDE -->
+            <div class="flex flex-col items-start gap-6 w-full md:w-1/2">
+
+                <!-- Small Heading with Line -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 border-t-2 border-[#E8A94A]"></div>
+                    <span class="text-brand-cream/70 text-xs font-medium uppercase tracking-widest">
+                        our services
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-brand-cream font-semibold text-4xl md:text-5xl leading-tight">
+                    Shaping the future<br>
+                    through strategic talent
+                </h1>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="flex flex-col items-start gap-6 w-full md:w-1/2 md:pt-10">
+
+                <!-- Description -->
+                <p class="text-brand-cream/80 text-sm md:text-base leading-relaxed">
+                    We connect exceptional talent with forward-thinking organizations,
+                    helping you build high-performing teams across global markets.
+                    Our approach is tailored, strategic, and results-driven.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row items-start gap-4">
+
+                    <a href="/contact.html"
+                        class="bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-7 py-3 rounded-full hover:bg-brand-cream transition-colors duration-200">
+                        Book consultation
+                    </a>
+
+                    <a href="#services"
+                        class="group relative text-brand-cream text-sm font-semibold px-6 py-3 rounded-full border border-white/30 transition-all duration-200 overflow-hidden"
+                        style="background-color: rgba(255, 255, 255, 0.12); backdrop-filter: blur(8px);">
+                        <div class="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                            style="background-color: rgba(255, 255, 255, 0.07)"></div>
+                        <span class="relative z-10">Our Services</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- ===================== END HERO + NAV SECTION ===================== -->
+
+    <!-- ===================== SERVICES OVERVIEW SECTION ===================== -->
+    <section id="services-overview" class="relative w-full" style="background-color: #1C343D;">
+
+        <div class="flex flex-col py-20 tablet:py-12 px-10">
+
+            <!-- Top: Left heading + Right description -->
+            <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start mb-16 tablet:mb-10">
+
+                <!-- LEFT: Eyebrow + Heading -->
+                <div class="flex flex-col gap-6 w-full md:w-2/3">
+
+                    <!-- Eyebrow -->
+                    <div class="fade-up flex flex-col items-start gap-4">
+                        <div class="flex items-center gap-3">
+                            <span class="text-white/40 text-xs font-medium uppercase tracking-widest">Our
+                                Structure</span>
+                        </div>
+                        <div class="w-full border-t border-white/20"></div>
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="fade-up delay-2 text-brand-cream font-semibold text-3xl md:text-5xl leading-tight">
+                        Two pillars.<br />One strategic vision.
+                    </h2>
+
+                </div>
+
+                <!-- RIGHT: Description -->
+                <div class="fade-up delay-3 flex flex-col justify-end w-full md:w-1/2 md:pt-16">
+                    <p class="text-white/60 text-sm md:text-base font-normal leading-relaxed">
+                        Our services are structured around two core business units each designed to address distinct
+                        but complementary organizational needs. Together they enable us to serve as a full-spectrum
+                        strategic partner, from sourcing exceptional talent to building the internal systems that help
+                        organizations perform at their best.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom: Two Content Divisions -->
+            <div class="flex flex-col md:flex-row gap-6">
+
+                <!-- Left: Global Talent & Workforce Solutions -->
+                <div class="fade-up delay-3 rounded-2xl p-8 flex flex-col gap-6 flex-1"
+                    style="background-color: #203C47;">
+
+                    <div class="flex flex-col gap-3">
+                        <span class="text-[#E8A94A] text-xs font-semibold uppercase tracking-widest">Business Unit
+                            01</span>
+                        <h3 class="text-brand-cream font-semibold text-xl leading-snug">
+                            Global Talent & Workforce Solutions
+                        </h3>
+                        <p class="text-white/60 text-sm font-normal leading-relaxed">
+                            We partner with growth-driven companies, multinationals, and emerging enterprises to
+                            identify, engage, and place high-impact professionals worldwide. From permanent and contract
+                            staffing to executive search, career coaching, and workforce development we connect the
+                            right talent to the right opportunities with precision and discretion.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-2 mt-auto">
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Permanent & Contract Talent Placement</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Executive Search</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Career Coaching</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Training & Development</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right: Human Capital & General Management Consulting -->
+                <div class="fade-up delay-4 rounded-2xl p-8 flex flex-col gap-6 flex-1"
+                    style="background-color: #2D4F52;">
+
+                    <div class="flex flex-col gap-3">
+                        <span class="text-[#E8A94A] text-xs font-semibold uppercase tracking-widest">Business Unit
+                            02</span>
+                        <h3 class="text-brand-cream font-semibold text-xl leading-snug">
+                            Human Capital & General Management Consulting
+                        </h3>
+                        <p class="text-white/60 text-sm font-normal leading-relaxed">
+                            We partner with organizations to strengthen their internal structures, enhance operational
+                            efficiency, and build people-centered strategies that support long-term success. Our work
+                            focuses on aligning culture, processes, and performance so organizations can operate with
+                            clarity, consistency, and confidence.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-2 mt-auto">
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Organizational Development & Strategic Alignment</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Process Optimization & Workflow Redesign</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Inclusive Policy & Framework Design</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1 h-1 rounded-full bg-[#E8A94A]"></div>
+                            <span class="text-white/50 text-sm">Sustainable Change & Capability Building</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== END SERVICES OVERVIEW SECTION ===================== -->
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" class="relative bg-white w-full">
+
+        <div class="flex flex-col py-20 tablet:py-12 px-10">
+
+            <!-- Eyebrow -->
+            <div class="fade-up flex flex-col items-start gap-4 mb-10 tablet:mb-6">
+                <div class="flex items-center gap-3">
+                    <span class="text-brand-blue1000/60 text-xs font-medium uppercase tracking-widest">
+                        WHAT WE OFFER
+                    </span>
+                </div>
+                <div class="w-full border-t border-gray-200"></div>
+            </div>
+
+            <!-- Main Content: Left + Right -->
+            <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+
+                <!-- LEFT SIDE -->
+                <div class="flex flex-col items-start w-full md:w-1/2">
+
+                    <!-- Main Heading -->
+                    <h2
+                        class="fade-up delay-2 text-[#1C343D] font-semibold text-3xl md:text-5xl leading-tight mb-10 w-full">
+                        Solutions built for a borderless world
+                    </h2>
+
+                    <!-- Accordion Service Items -->
+                    <div class="fade-up delay-3 flex flex-col w-full">
+
+                        <!-- Item 1 -->
+                        <div class="service-accordion border-t border-gray-200 cursor-pointer" data-index="0">
+                            <div class="flex items-center justify-between py-4">
+                                <span
+                                    class="service-accordion-title text-[#1C343D] font-semibold text-base transition-colors duration-200">
+                                    Permanent & Contract Talent Placement
+                                </span>
+                            </div>
+                            <div class="service-accordion-body overflow-hidden transition-all duration-400"
+                                style="max-height: 0;">
+                                <p class="text-brand-blue1000/60 text-sm font-normal leading-relaxed pb-4"></p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="service-accordion border-t border-gray-200 cursor-pointer" data-index="1">
+                            <div class="flex items-center justify-between py-4">
+                                <span
+                                    class="service-accordion-title text-[#1C343D] font-semibold text-base transition-colors duration-200">
+                                    Executive Search
+                                </span>
+                            </div>
+                            <div class="service-accordion-body overflow-hidden transition-all duration-400"
+                                style="max-height: 0;">
+                                <p class="text-brand-blue1000/60 text-sm font-normal leading-relaxed pb-4"></p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="service-accordion border-t border-gray-200 cursor-pointer" data-index="2">
+                            <div class="flex items-center justify-between py-4">
+                                <span
+                                    class="service-accordion-title text-[#1C343D] font-semibold text-base transition-colors duration-200">
+                                    Career Coaching
+                                </span>
+                            </div>
+                            <div class="service-accordion-body overflow-hidden transition-all duration-400"
+                                style="max-height: 0;">
+                                <p class="text-brand-blue1000/60 text-sm font-normal leading-relaxed pb-4"></p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="service-accordion border-t border-gray-200 border-b cursor-pointer" data-index="3">
+                            <div class="flex items-center justify-between py-4">
+                                <span
+                                    class="service-accordion-title text-[#1C343D] font-semibold text-base transition-colors duration-200">
+                                    Training & Development
+                                </span>
+                            </div>
+                            <div class="service-accordion-body overflow-hidden transition-all duration-400"
+                                style="max-height: 0;">
+                                <p class="text-brand-blue1000/60 text-sm font-normal leading-relaxed pb-4"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Get in touch Button -->
+                    <a href="/contact.html"
+                        class="fade-up  mt-10 bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-8 py-3 rounded-full hover:bg-[#1C343D] hover:text-white transition-colors duration-200">
+                        Get in touch
+                    </a>
+
+                </div>
+
+                <!-- RIGHT SIDE: Dynamic Image -->
+                <div class="fade-up delay-3 w-full md:w-1/2 md:sticky md:top-24">
+                    <img id="service-image" src="" alt="Service"
+                        class="w-full h-[500px] object-cover object-center rounded-2xl transition-opacity duration-500" />
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== END SERVICES SECTION ===================== -->
+
+    <!-- ===================== OUR APPROACH SECTION ===================== -->
+    <section id="approach" class="relative w-full" style="background-color: #567A7D;">
+
+        <div class="flex flex-col py-20 tablet:py-12 px-10">
+
+            <!-- Section Header -->
+            <div class="fade-up flex items-center justify-center gap-4 mb-16 tablet:mb-10">
+                <div class="flex-1 border-t border-white/20"></div>
+                <span class="text-[#E8A94A] text-[14px] font-medium uppercase tracking-widest shrink-0">OUR
+                    APPROACH</span>
+                <div class="flex-1 border-t border-white/20"></div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="flex flex-col gap-6">
+
+                <!-- ROW 1 -->
+                <div class="flex flex-col md:flex-row gap-6">
+
+                    <!-- Image Card — top left -->
+                    <div class="fade-up delay-2 rounded-2xl overflow-hidden md:w-[33.33%]" style="min-height: 280px;">
+                        <img src="/assets/img/inzira-4.png" alt="Our Approach"
+                            class="w-full h-full object-cover object-center" />
+                    </div>
+
+                    <!-- Card 1: Discovery -->
+                    <div
+                        class="fade-up delay-3 card-dark flex flex-col justify-between p-6 rounded-2xl cursor-pointer md:w-[33.33%]">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-16"
+                            style="background-color: #567A7D;">
+                            <img src="/assets/icons/magnifying-glass.png" alt="Discovery"
+                                class="w-7 h-6 object-contain" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-brand-cream font-semibold text-lg">Discovery</h3>
+                            <p class="text-white/60 text-sm font-normal leading-relaxed">
+                                We begin by understanding your organization's goals, challenges, and workforce needs
+                                gathering key insights to guide the engagement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Development -->
+                    <div
+                        class="fade-up delay-4 card-accent flex flex-col justify-between p-6 rounded-2xl cursor-pointer md:w-[33.33%]">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-16"
+                            style="background-color: #567A7D;">
+                            <img src="/assets/icons/growth.png" alt="Development" class="w-7 h-6 object-contain" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-brand-cream font-semibold text-lg">Development</h3>
+                            <p class="text-white/60 text-sm font-normal leading-relaxed">
+                                Using insights from discovery, we design a tailored strategy aligned with your
+                                objectives
+                                and frameworks needed for sustainable growth.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="flex flex-col md:flex-row gap-6">
+
+                    <!-- Card 3: Implementation -->
+                    <div
+                        class="fade-up delay-5 card-accent flex flex-col justify-between p-6 rounded-2xl cursor-pointer md:w-[33.33%]">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-16"
+                            style="background-color: #567A7D;">
+                            <img src="/assets/icons/integration.png" alt="Implementation"
+                                class="w-7 h-6 object-contain" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-brand-cream font-semibold text-lg">Implementation</h3>
+                            <p class="text-white/60 text-sm font-normal leading-relaxed">
+                                We move from strategy to execution, working alongside your team to deliver practical
+                                outcomes that strengthen your organization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Monitoring -->
+                    <div
+                        class="fade-up delay-6 card-dark flex flex-col justify-between p-6 rounded-2xl cursor-pointer md:w-[33.33%]">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-16"
+                            style="background-color: #567A7D;">
+                            <img src="/assets/icons/analytics.png" alt="Monitoring" class="w-7 h-6 object-contain" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-brand-cream font-semibold text-lg">Monitoring</h3>
+                            <p class="text-white/60 text-sm font-normal leading-relaxed">
+                                We track progress and assess performance after implementation ensuring solutions
+                                remain
+                                effective and evolve with your organization's needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Image Card — bottom right -->
+                    <div class="fade-up delay-7 rounded-2xl overflow-hidden md:w-[33.33%]" style="min-height: 280px;">
+                        <img src="/assets/img/inzira-2.png" alt="Our Approach"
+                            class="w-full h-full object-cover object-center" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== END OUR APPROACH SECTION ===================== -->
+
+
+    <!-- ===================== TESTIMONIALS SECTION ===================== -->
+    <!-- Slightly lighter than #20324A -->
+    <section id="testimonials" class="relative w-full" style="background-color: #2D4F52;">
+
+        <div class="flex flex-col py-20 tablet:py-12 px-10">
+
+            <!-- Section Header: centered with lines -->
+            <div class="fade-up flex items-center justify-center gap-4 mb-16 tablet:mb-10">
+                <div class="flex-1 border-t border-white/20"></div>
+                <span class="text-[#E8A94A] text-[14px] font-medium uppercase tracking-widest shrink-0">Making a
+                    Difference</span>
+                <div class="flex-1 border-t border-white/20"></div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="flex flex-col gap-6">
+
+                <!-- ROW 1 -->
+                <div class="flex flex-col md:flex-row gap-6">
+
+                    <!-- Long Card 1: Testimonial — 65% -->
+                    <div class="flex flex-col justify-between p-8 rounded-2xl cursor-pointer transition-all duration-300 md:w-[65%]"
+                        style="background-color: #203C47;" onmouseenter="this.style.backgroundColor='#1C343D'"
+                        onmouseleave="this.style.backgroundColor='#203C47'">
+
+                        <!-- Quote -->
+                        <div class="flex flex-col gap-4 mb-8">
+                            <span class="text-[#E8A94A] text-4xl font-serif leading-none">"</span>
+                            <p class="text-white/80 text-base font-normal leading-relaxed">
+                                Inzira Group didn't just fill a role they found us a leader who transformed how our
+                                team operates. Their precision, discretion, and deep market knowledge made all the
+                                difference in a search we had struggled with for months.
+                            </p>
+                        </div>
+
+                        <!-- Person -->
+                        <div class="flex items-center gap-4">
+                            <img src="/assets/img/inzirabg-2.jpg" alt="Client"
+                                class="w-12 h-12 rounded-full object-cover shrink-0" />
+                            <div class="flex flex-col">
+                                <span class="text-white font-semibold text-sm">Sarah Mitchell</span>
+                                <span class="text-white/50 text-xs">Chief People Officer, Nexus Global</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Card 1: Stat — 35% -->
+                    <div class="flex flex-col justify-end p-8 rounded-2xl md:w-[35%]"
+                        style="background-color: #1C343D;">
+                        <span class="text-[#567A7D] font-bold text-4xl md:text-6xl leading-none mb-3">95%</span>
+                        <p class="text-white/60 text-sm font-normal leading-relaxed">Client retention rate built on
+                            trust and long-term partnership</p>
+                    </div>
+
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="flex flex-col md:flex-row gap-6">
+
+                    <!-- Small Card 2: Stat — 35% -->
+                    <div class="flex flex-col justify-end p-8 rounded-2xl md:w-[35%]"
+                        style="background-color: #1C343D;">
+                        <span class="text-[#567A7D] font-bold text-4xl md:text-6xl leading-none mb-3">50+</span>
+                        <p class="text-white/60 text-sm font-normal leading-relaxed">High-impact placements delivered
+                            across global markets</p>
+                    </div>
+
+                    <!-- Long Card 2: Testimonial — 65% -->
+                    <div class="flex flex-col justify-between p-8 rounded-2xl cursor-pointer transition-all duration-300 md:w-[65%]"
+                        style="background-color: #203C47;" onmouseenter="this.style.backgroundColor='#1C343D'"
+                        onmouseleave="this.style.backgroundColor='#203C47'">
+
+                        <!-- Quote -->
+                        <div class="flex flex-col gap-4 mb-8">
+                            <span class="text-[#8B9AAC] text-4xl font-serif leading-none">"</span>
+                            <p class="text-white/80 text-base font-normal leading-relaxed">
+                                Working with Inzira Group was a game-changer for my career. Their coaching team helped
+                                me reposition my brand, navigate a pivot into a new market, and land a role I genuinely
+                                love. They are invested in your long-term success.
+                            </p>
+                        </div>
+
+                        <!-- Person -->
+                        <div class="flex items-center gap-4">
+                            <img src="/assets/img/inzirabg-3.jpg" alt="Client"
+                                class="w-12 h-12 rounded-full object-cover shrink-0" />
+                            <div class="flex flex-col">
+                                <span class="text-white font-semibold text-sm">James Okafor</span>
+                                <span class="text-white/50 text-xs">Senior Strategy Manager, Verity Partners</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== END TESTIMONIALS SECTION ===================== -->
+    <!-- ===================== CALL TO ACTION SECTION ===================== -->
+    <section class="relative overflow-hidden">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/img/three.webp" alt="Background" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0" style="background-color: rgba(32, 60, 71, 0.65)"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col items-center text-center px-6 py-24 md:py-32 max-w-3xl mx-auto">
+
+            <!-- Heading -->
+            <h2 class="fade-up delay-1 text-brand-cream font-semibold text-3xl md:text-5xl leading-tight">
+                Ready to Accelerate<br>
+                Your Growth?
+            </h2>
+
+            <!-- Description -->
+            <p class="fade-up delay-2 mt-6 text-brand-cream/80 text-sm md:text-base leading-relaxed">
+                Partner with us to unlock strategic talent solutions that help you scale faster,
+                build stronger teams, and stay ahead in a competitive global market.
+            </p>
+
+
+            <!-- CTA Button -->
+            <a href="/contact.html"
+                class="fade-up  mt-8 inline-block bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-8 py-3 rounded-full hover:bg-brand-cream transition-all duration-300">
+                Schedule a Call
+            </a>
+
+        </div>
+
+    </section>
+    <!-- ===================== END CALL TO ACTION SECTION ===================== -->
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="relative w-full pb-10 px-10" style="background-color: #1C343D;">
+
+        <div class="flex flex-col gap-12 pt-16">
+
+            <!-- Top: Logo + Nav + Socials -->
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+
+                <!-- Logo + Tagline -->
+                <div class="flex flex-col gap-3 max-w-xs">
+                    <a href="/index.html"
+                        class="flex font-display items-center gap-2 text-brand-cream font-semibold text-xl tracking-wide">
+                        INZIRA GROUP
+                    </a>
+                    <p class="text-white/50 text-sm leading-relaxed">
+                        Find Your Future, Anywhere. Connecting exceptional talent with forward-thinking organizations
+                        across global markets.
+                    </p>
+                </div>
+
+                <!-- Nav Links -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Navigation</span>
+                    <a href="/about.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">About</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Services</a>
+                    <a href="/approach.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Approach</a>
+                    <a href="/blogs.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
+                </div>
+
+                <!-- Services -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Services</span>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Talent
+                        Placement</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Executive
+                        Search</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Career
+                        Coaching</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Training &
+                        Development</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Contact</span>
+                    <a href="mailto:admin@inziragroup.com"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">info@inziragroup.com</a>
+                    <a href="/contact.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Work
+                        With
+                        Us</a>
+                    <a href="/contact.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">General
+                        Inquiries</a>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-white/10"></div>
+
+            <!-- Bottom: Copyright -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-xs">© 2026 Inzira Group. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Privacy
+                        Policy</a>
+                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Terms
+                        of Use</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- ===================== END FOOTER ===================== -->
+
+    <script src="services.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Meta Description-->
+    <meta name="description"
+        content="Explore strategic insights on global recruitment, human capital advisory, and talent development. Stay ahead of market trends with Inzira Group’s expert analysis on building borderless organizations." />
+    <!--Page Icon-->
+    <link rel="icon" href="/assets/icons/page.jpeg" />
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Google Fonts - Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!--Tailwind Config-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // For the Logo and the Main Hero H1: font-display
+                        display: ["Cinzel", "serif"],
+                        // For all body text, nav links, and sub-headers: font-sans
+                        sans: ["'Public Sans'", "sans-serif"],
+                    },
+                    colors: {
+                        brand: {
+                            cream: "#f5f1ed",
+                            blue600: "#8ba9cc",
+                            blue700: "#567aad",
+                            blue800: "#2d4f82",
+                            blue900: "#203c6e",
+                            blue1000: "#1c3459",
+                            blue1100: "#111f38",
+                            gold: "#E8A94A",
+                        },
+                    },
+                    screens: {
+                        tablet: { min: "768px", max: "1023px" },
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .delay-2 {
+            transition-delay: 0.25s;
+        }
+
+        .delay-3 {
+            transition-delay: 0.4s;
+        }
+
+        .delay-4 {
+            transition-delay: 0.55s;
+        }
+
+        .delay-5 {
+            transition-delay: 0.7s;
+        }
+
+        .delay-6 {
+            transition-delay: 0.85s;
+        }
+
+        .delay-7 {
+            transition-delay: 1.0s;
+        }
+
+        .delay-8 {
+            transition-delay: 1.15s;
+        }
+
+        /* Smooth navbar bg transition */
+        #navbar {
+            transition: background-color 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        /* Smooth link color transitions */
+        #navbar ul li a,
+        #navbar a.flex {
+            transition: color 0.3s ease;
+        }
+
+        /* Approach card hover transitions */
+        .card-dark {
+            background-color: #1C2A3D;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-dark:hover {
+            background-color: #253650;
+        }
+
+        .card-accent {
+            background-color: #253650;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-accent:hover {
+            background-color: #1C2A3D;
+        }
+    </style>
+
+    <title>Insights & Perspectives | Inzira Group</title>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+
+    <!-- ===================== ABOUT HERO SECTION ===================== -->
+    <section class="relative bg-white overflow-hidden">
+
+        <!-- ===== NAVBAR ===== -->
+        <nav id="navbar" class="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
+            <div class="flex items-center justify-between px-10 py-5">
+
+                <!-- Logo -->
+                <a href="/index.html"
+                    class="flex font-display items-center gap-2 text-[#20324A] font-semibold text-2xl tracking-wide">
+                    INZIRA GROUP
+                </a>
+
+                <!-- Desktop Links -->
+                <ul class="hidden md:flex items-center gap-8 text-[#20324A] text-[16px] font-medium tracking-wide">
+                    <li><a href="/about.html" class="hover:text-[#E8A94A]">About</a></li>
+                    <li><a href="/services.html" class="hover:text-[#E8A94A]">Services</a></li>
+                    <li><a href="/approach.html" class="hover:text-[#E8A94A]">Approach</a></li>
+                    <li><a href="/blogs.html" class="hover:text-[#E8A94A]">Insights</a></li>
+                </ul>
+
+                <!-- Contact Button -->
+                <a href="/contact.html"
+                    class="hidden md:inline-block bg-[#E8A94A] text-[#20324A] text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#20324A] hover:text-white transition">
+                    Contact Us
+                </a>
+
+                <!-- Mobile Hamburger -->
+                <button id="hamburger-btn" class="md:hidden focus:outline-none">
+                    <img src="/assets/icons/menu.png" class="w-7 h-7" />
+                </button>
+            </div>
+
+            <div class="w-full border-t border-gray-200"></div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu"
+                class="hidden flex-col items-center gap-5 py-7 px-10 md:hidden absolute top-full left-0 w-full z-50"
+                style="background-color: #203C47; backdrop-filter: blur(12px);">
+                <a href="/about.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">About</a>
+                <a href="/services.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Services</a>
+                <a href="/approach.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Approach</a>
+                <a href="/blogs.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Insights</a>
+                <a href="/contact.html"
+                    class="mt-1 bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-7 py-2 rounded-full hover:bg-brand-cream transition-colors duration-200">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+        <!-- ===== END NAVBAR ===== -->
+        <!-- ===== HERO CONTENT ===== -->
+        <div class="pt-28 md:pt-32">
+
+            <div class="flex flex-col md:flex-row items-start justify-between gap-12 px-10 pb-12 md:pb-16">
+
+                <!-- LEFT SIDE -->
+                <div class="flex flex-col gap-10 w-full md:w-1/2">
+
+                    <!-- Heading -->
+                    <div class="flex flex-col gap-6 text-left fade-up delay-1">
+
+                        <!-- Small heading -->
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 border-t-2 border-[#E8A94A]"></div>
+                            <span class="text-[#1C343D]/70 text-xs font-medium uppercase tracking-widest">
+                                Insights & Perspectives
+                            </span>
+                        </div>
+
+                        <!-- Main heading -->
+                        <h1 class="text-[#20324A] font-semibold text-4xl md:text-5xl leading-tight">
+                            Perspectives that unlock sustainable growth across borders
+                        </h1>
+
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="flex flex-col gap-8 fade-up delay-2">
+
+                        <!-- Bold description -->
+                        <p class="text-[#20324A] text-sm md:text-base leading-relaxed font-semibold">
+                            Inzira Group is curating a series of strategic perspectives on global recruitment,
+                            human capital advisory, and the future of the African labor market.
+                        </p>
+
+                        <!-- Divider -->
+                        <div class="w-full border-t border-[#20324A]/20"></div>
+
+                        <!-- Two column text -->
+                        <div class="flex flex-col sm:flex-row gap-8">
+
+                            <p class="text-[#20324A]/80 text-sm leading-relaxed">
+                                Our editorial team is currently developing high-impact insights designed to help
+                                organizations
+                                navigate complex growth environments. We bridge international standards with local
+                                execution
+                                realities to deliver market intelligence that matters.
+                            </p>
+
+                            <p class="text-[#20324A]/80 text-sm leading-relaxed">
+                                Strategic intelligence is arriving soon. Follow our journey as we redefine
+                                how organizations source, structure, and deploy talent across market borders.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE: FEATURED ARTICLE CARD -->
+                <a href="/blog" class="group w-full md:w-1/2 fade-up delay-3">
+
+                    <div
+                        class="bg-white/70 backdrop-blur-lg border border-[#20324A]/10 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+
+                        <!-- Image -->
+                        <div class="h-56 overflow-hidden">
+                            <img src="/assets/img/three.webp" alt="Featured Article"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6 flex flex-col gap-4">
+
+                            <!-- Tag -->
+                            <span
+                                class="w-fit text-xs font-semibold px-3 py-1 rounded-full bg-[#E8A94A]/10 text-[#E8A94A] uppercase tracking-wide">
+                                Featured Article
+                            </span>
+
+                            <!-- Title -->
+                            <h3
+                                class="text-[#20324A] text-lg md:text-xl font-semibold leading-snug group-hover:text-[#E8A94A] transition">
+                                Navigating Talent Across Borders in a Changing Global Economy
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-[#20324A]/70 text-sm leading-relaxed">
+                                Explore how organizations can strategically attract and retain top talent
+                                across international markets while adapting to evolving workforce trends.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+        <!-- ===== END HERO CONTENT ===== -->
+
+    </section>
+    <!-- ===================== END ABOUT HERO ===================== -->
+
+    <!-- ===================== NEWSLETTER SECTION ===================== -->
+    <section class="relative overflow-hidden">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/img/three.webp" alt="Background" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0" style="background-color: rgba(32, 60, 71, 0.70)"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col items-center text-center px-6 py-24 md:py-32 max-w-3xl mx-auto">
+
+            <!-- Heading -->
+            <h2 class="fade-up delay-1 text-brand-cream font-semibold text-3xl md:text-5xl leading-tight">
+                Stay Ahead with Our Insights
+            </h2>
+
+            <!-- Description -->
+            <p class="fade-up delay-2 mt-6 text-brand-cream/80 text-sm md:text-base leading-relaxed">
+                Subscribe to our newsletter for curated perspectives on global talent, workforce trends,
+                and strategies that help organizations grow across borders.
+            </p>
+
+            <!-- Form -->
+            <form class="fade-up delay-3 mt-10 w-full flex flex-col sm:flex-row gap-4">
+
+                <!-- Email Input -->
+                <input type="email" placeholder="Enter your email address"
+                    class="w-full px-6 py-3 rounded-full text-sm outline-none border border-white/20 bg-white/10 text-white placeholder-white/60 backdrop-blur-md focus:border-[#E8A94A]" />
+
+                <!-- Button -->
+                <button type="submit"
+                    class="bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-8 py-3 rounded-full hover:bg-brand-cream transition-all duration-300">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+    <!-- ===================== END NEWSLETTER SECTION ===================== -->
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="relative w-full pb-10 px-10" style="background-color: #1C343D;">
+
+        <div class="flex flex-col gap-12 pt-16">
+
+            <!-- Top: Logo + Nav + Socials -->
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+
+                <!-- Logo + Tagline -->
+                <div class="flex flex-col gap-3 max-w-xs">
+                    <a href="/index.html"
+                        class="flex font-display items-center gap-2 text-brand-cream font-semibold text-xl tracking-wide">
+                        INZIRA GROUP
+                    </a>
+                    <p class="text-white/50 text-sm leading-relaxed">
+                        Find Your Future, Anywhere. Connecting exceptional talent with forward-thinking organizations
+                        across global markets.
+                    </p>
+                </div>
+
+                <!-- Nav Links -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Navigation</span>
+                    <a href="/about.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">About</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Services</a>
+                    <a href="/approach.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Approach</a>
+                    <a href="/blogs.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
+                </div>
+
+                <!-- Services -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Services</span>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Talent
+                        Placement</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Executive
+                        Search</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Career
+                        Coaching</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Training &
+                        Development</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Contact</span>
+                    <a href="mailto:admin@inziragroup.com"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">info@inziragroup.com</a>
+                    <a href="/contact.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Work
+                        With
+                        Us</a>
+                    <a href="/contact.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">General
+                        Inquiries</a>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-white/10"></div>
+
+            <!-- Bottom: Copyright -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-xs">© 2026 Inzira Group. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Privacy
+                        Policy</a>
+                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Terms
+                        of Use</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- ===================== END FOOTER ===================== -->
+    <script src="/blog.js"></script>
+</body>
+
+</html>

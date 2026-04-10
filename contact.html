@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Meta Description-->
+    <meta name="description"
+        content="Get in touch with Inzira Group to discuss your recruitment and human capital needs. Connect with our boutique advisory team to start building your global workforce today." />
+
+    <!--Page Icon-->
+    <link rel="icon" href="/assets/icons/page.jpeg" />
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Google Fonts - Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!--Tailwind Config-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // For the Logo and the Main Hero H1: font-display
+                        display: ["Cinzel", "serif"],
+                        // For all body text, nav links, and sub-headers: font-sans
+                        sans: ["'Public Sans'", "sans-serif"],
+                    },
+                    colors: {
+                        brand: {
+                            cream: "#f5f1ed",
+                            blue600: "#8ba9cc",
+                            blue700: "#567aad",
+                            blue800: "#2d4f82",
+                            blue900: "#203c6e",
+                            blue1000: "#1c3459",
+                            blue1100: "#111f38",
+                            gold: "#E8A94A",
+                        },
+                    },
+                    screens: {
+                        tablet: { min: "768px", max: "1023px" },
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .delay-2 {
+            transition-delay: 0.25s;
+        }
+
+        .delay-3 {
+            transition-delay: 0.4s;
+        }
+
+        .delay-4 {
+            transition-delay: 0.55s;
+        }
+
+        .delay-5 {
+            transition-delay: 0.7s;
+        }
+
+        .delay-6 {
+            transition-delay: 0.85s;
+        }
+
+        .delay-7 {
+            transition-delay: 1.0s;
+        }
+
+        .delay-8 {
+            transition-delay: 1.15s;
+        }
+
+        /* Approach card hover transitions */
+        .card-dark {
+            background-color: #203C47;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-dark:hover {
+            background-color: #2D4F52;
+        }
+
+        .card-accent {
+            background-color: #2D4F52;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-accent:hover {
+            background-color: #1C343D;
+        }
+    </style>
+
+    <title>Contact Us | Inzira Group</title>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+    <!-- ===================== HERO + NAV SECTION ===================== -->
+    <section id="hero-section" class="relative flex flex-col overflow-hidden">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/img/three.webp" alt="Hero Background" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-[#203C47]/65"></div>
+        </div>
+
+        <!-- ===== NAVBAR ===== -->
+        <nav id="navbar" class="relative z-20 w-full transition-all duration-300">
+            <div class="flex items-center justify-between px-10 py-5">
+
+                <!-- Left: Written Logo -->
+                <a href="/index.html"
+                    class="fade-up font-display delay-1 flex items-center gap-2 text-brand-cream font-semibold text-2xl tracking-wide shrink-0 z-10">
+                    INZIRA GROUP
+                </a>
+
+                <!-- Middle: Nav Links (Desktop) -->
+                <ul
+                    class="fade-up delay-2 hidden md:flex items-center gap-8 text-brand-cream text-[16px] font-medium tracking-wide">
+                    <li><a href="/about.html" class="hover:text-[#E8A94A] transition-colors duration-200">About</a></li>
+                    <li><a href="/services.html"
+                            class="hover:text-[#E8A94A] transition-colors duration-200">Services</a></li>
+                    <li><a href="/approach.html"
+                            class="hover:text-[#E8A94A] transition-colors duration-200">Approach</a></li>
+                    <li><a href="/blogs.html" class="hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
+                    </li>
+                </ul>
+
+                <!-- Right: Contact Button (Desktop) -->
+                <a href="/contact.html"
+                    class="fade-up hidden md:inline-block bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-cream transition-colors duration-200 shrink-0">
+                    Contact Us
+                </a>
+
+                <!-- Hamburger Icon (Mobile) -->
+                <button id="hamburger-btn" class="fade-up delay-2 md:hidden focus:outline-none z-10"
+                    aria-label="Toggle menu">
+                    <img src="/assets/icons/menu.png" alt="Menu" class="w-7 h-7 object-contain" id="hamburger-icon" />
+                </button>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="fade-up delay-3 w-full border-t border-white/25"></div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu"
+                class="hidden flex-col items-center gap-5 py-7 px-10 md:hidden absolute top-full left-0 w-full z-50"
+                style="background-color: #203C47; backdrop-filter: blur(12px);">
+                <a href="/about.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">About</a>
+                <a href="/services.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Services</a>
+                <a href="/approach.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Approach</a>
+                <a href="/blogs.html"
+                    class="text-brand-cream text-sm font-medium hover:text-[#E8A94A] transition-colors">Insights</a>
+                <a href="/contact.html"
+                    class="mt-1 bg-[#E8A94A] text-brand-blue1000 text-sm font-semibold px-7 py-2 rounded-full hover:bg-brand-cream transition-colors duration-200">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+
+        <!-- ===== CONTACT CONTENT ===== -->
+        <div class="relative z-10 flex flex-col md:flex-row items-start justify-between gap-12 px-10 py-28 md:py-36">
+
+            <!-- LEFT SIDE: Heading + description -->
+            <div class="flex flex-col items-start gap-6 w-full md:w-1/2">
+
+                <!-- Small Heading with Line -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 border-t-2 border-[#E8A94A]"></div>
+                    <span class="text-brand-cream/70 text-xs font-medium uppercase tracking-widest">
+                        Join Our Network
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-brand-cream font-semibold text-4xl md:text-5xl leading-tight">
+                    Ready to find<br>your next opportunity?
+                </h1>
+
+                <!-- Description -->
+                <p class="text-brand-cream/70 text-sm md:text-base leading-relaxed max-w-sm">
+                    Tell us about yourself and what you're looking for. Our team reviews every submission and reaches
+                    out when the right opportunity arises. We work with exceptional professionals across global markets
+                    and we'd love to hear from you.
+                </p>
+
+                <!-- Small trust note -->
+                <div class="flex items-center gap-3 mt-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#E8A94A]"></div>
+                    <span class="text-brand-cream/50 text-xs">We typically respond within 2–3 business days</span>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE: Contact Card -->
+            <div class="w-full md:w-1/2">
+                <div class="bg-white rounded-2xl p-8 shadow-2xl">
+
+                    <!-- Card heading -->
+                    <div class="mb-6">
+                        <h3 class="text-[#20324A] font-semibold text-lg">Submit your details</h3>
+                        <p class="text-[#20324A]/50 text-sm mt-1">All fields are required</p>
+                    </div>
+
+                    <!-- Form — sends to Formspree → joshopakrwoth@gmail.com -->
+                    <form id="candidate-form" action="https://formspree.io/f/xlgopoej" method="POST"
+                        class="flex flex-col gap-4">
+                        <!-- Hidden field to label this as a candidate submission -->
+                        <input type="hidden" name="_subject" value="New Candidate Submission — Inzira Group" />
+                        <input type="hidden" name="form_type" value="candidate" />
+
+                        <!-- Row 1: Name + Phone -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+
+                            <!-- Full Name -->
+                            <div class="flex flex-col gap-1.5 flex-1">
+                                <label class="text-[#20324A] text-xs font-semibold uppercase tracking-widest">Full
+                                    Name</label>
+                                <input type="text" name="full_name" placeholder="Jane Doe" required
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#20324A] text-sm placeholder-gray-300 focus:outline-none focus:border-[#E8A94A] focus:ring-2 focus:ring-[#E8A94A]/20 transition-all duration-200" />
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="flex flex-col gap-1.5 flex-1">
+                                <label class="text-[#20324A] text-xs font-semibold uppercase tracking-widest">Phone
+                                    Number</label>
+                                <input type="tel" name="phone" placeholder="+1 234 567 8900" required
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#20324A] text-sm placeholder-gray-300 focus:outline-none focus:border-[#E8A94A] focus:ring-2 focus:ring-[#E8A94A]/20 transition-all duration-200" />
+                            </div>
+
+                        </div>
+
+                        <!-- Row 2: Email (full width) -->
+                        <div class="flex flex-col gap-1.5">
+                            <label class="text-[#20324A] text-xs font-semibold uppercase tracking-widest">Email
+                                Address</label>
+                            <input type="email" name="email" placeholder="jane@example.com" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#20324A] text-sm placeholder-gray-300 focus:outline-none focus:border-[#E8A94A] focus:ring-2 focus:ring-[#E8A94A]/20 transition-all duration-200" />
+                        </div>
+
+                        <!-- Row 3: Message -->
+                        <div class="flex flex-col gap-1.5">
+                            <label class="text-[#20324A] text-xs font-semibold uppercase tracking-widest">Tell Us About
+                                Yourself</label>
+                            <textarea name="message" rows="4"
+                                placeholder="Briefly describe your background, the type of roles you're interested in, and your current career stage..."
+                                required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#20324A] text-sm placeholder-gray-300 focus:outline-none focus:border-[#E8A94A] focus:ring-2 focus:ring-[#E8A94A]/20 transition-all duration-200 resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="candidate-submit-btn"
+                            class="w-full bg-[#203C47] text-white text-sm font-semibold py-3.5 rounded-xl hover:bg-[#E8A94A] hover:text-[#20324A] transition-all duration-300 mt-2">
+                            Send Message
+                        </button>
+
+                        <!-- Success / Error messages -->
+                        <p id="candidate-form-success"
+                            class="hidden text-center text-sm font-medium text-green-600 bg-green-50 rounded-xl py-3 px-4">
+                            ✓ Message sent! We'll be in touch within 2–3 business days.
+                        </p>
+                        <p id="candidate-form-error"
+                            class="hidden text-center text-sm font-medium text-red-600 bg-red-50 rounded-xl py-3 px-4">
+                            Something went wrong. Please try again or email us directly.
+                        </p>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== END HERO + NAV SECTION ===================== -->
+
+
+    <!-- ===================== FEEDBACK SECTION ===================== -->
+    <!-- White bg, dark green text, form LEFT, text RIGHT -->
+    <section id="feedback-section" class="relative bg-white w-full">
+
+        <div class="flex flex-col md:flex-row items-start gap-12 px-10 py-28 md:py-36">
+
+            <!-- LEFT SIDE: Feedback Form Card -->
+            <div class="w-full md:w-1/2">
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+
+                    <!-- Card heading -->
+                    <div class="mb-6">
+                        <h3 class="text-[#203C47] font-semibold text-lg">Share your feedback</h3>
+                        <p class="text-[#203C47]/50 text-sm mt-1">All fields are required</p>
+                    </div>
+
+                    <!-- Form — sends to Formspree → joshopakrwoth@gmail.com -->
+                    <form id="feedback-form" action="https://formspree.io/f/xlgopoej" method="POST"
+                        class="flex flex-col gap-4">
+                        <!-- Hidden fields -->
+                        <input type="hidden" name="_subject" value="New Feedback Submission — Inzira Group" />
+                        <input type="hidden" name="form_type" value="feedback" />
+
+                        <!-- Row 1: Name + Phone -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+
+                            <!-- Full Name -->
+                            <div class="flex flex-col gap-1.5 flex-1">
+                                <label class="text-[#203C47] text-xs font-semibold uppercase tracking-widest">Full
+                                    Name</label>
+                                <input type="text" name="full_name" placeholder="Jane Doe" required
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#203C47] text-sm placeholder-gray-300 focus:outline-none focus:border-[#203C47] focus:ring-2 focus:ring-[#203C47]/15 transition-all duration-200" />
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="flex flex-col gap-1.5 flex-1">
+                                <label class="text-[#203C47] text-xs font-semibold uppercase tracking-widest">Phone
+                                    Number</label>
+                                <input type="tel" name="phone" placeholder="+1 234 567 8900" required
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#203C47] text-sm placeholder-gray-300 focus:outline-none focus:border-[#203C47] focus:ring-2 focus:ring-[#203C47]/15 transition-all duration-200" />
+                            </div>
+
+                        </div>
+
+                        <!-- Row 2: Email (full width) -->
+                        <div class="flex flex-col gap-1.5">
+                            <label class="text-[#203C47] text-xs font-semibold uppercase tracking-widest">Email
+                                Address</label>
+                            <input type="email" name="email" placeholder="jane@example.com" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#203C47] text-sm placeholder-gray-300 focus:outline-none focus:border-[#203C47] focus:ring-2 focus:ring-[#203C47]/15 transition-all duration-200" />
+                        </div>
+
+                        <!-- Row 3: Feedback message -->
+                        <div class="flex flex-col gap-1.5">
+                            <label class="text-[#203C47] text-xs font-semibold uppercase tracking-widest">Your
+                                Feedback</label>
+                            <textarea name="message" rows="4"
+                                placeholder="Share your experience working with Inzira Group — what went well, what could be improved, or anything else you'd like us to know..."
+                                required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#203C47] text-sm placeholder-gray-300 focus:outline-none focus:border-[#203C47] focus:ring-2 focus:ring-[#203C47]/15 transition-all duration-200 resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="feedback-submit-btn"
+                            class="w-full bg-[#203C47] text-white text-sm font-semibold py-3.5 rounded-xl hover:bg-[#E8A94A] hover:text-[#203C47] transition-all duration-300 mt-2">
+                            Send Feedback
+                        </button>
+
+                        <!-- Success / Error messages -->
+                        <p id="feedback-form-success"
+                            class="hidden text-center text-sm font-medium text-green-600 bg-green-50 rounded-xl py-3 px-4">
+                            ✓ Feedback received, thank you! We truly appreciate you taking the time.
+                        </p>
+                        <p id="feedback-form-error"
+                            class="hidden text-center text-sm font-medium text-red-600 bg-red-50 rounded-xl py-3 px-4">
+                            Something went wrong. Please try again or email us directly.
+                        </p>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: Heading + description -->
+            <div class="flex flex-col items-start gap-6 w-full md:w-1/2 md:pt-4">
+
+                <!-- Small Heading with Line -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 border-t-2 border-[#203C47]"></div>
+                    <span class="text-[#203C47]/60 text-xs font-medium uppercase tracking-widest">
+                        Share Your Experience
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h2 class="text-[#203C47] font-semibold text-4xl md:text-5xl leading-tight">
+                    Your feedback<br>shapes how we grow
+                </h2>
+
+                <!-- Description -->
+                <p class="text-[#203C47]/65 text-sm md:text-base leading-relaxed max-w-sm">
+                    We take every piece of feedback seriously. Whether you've worked with us as a candidate, a client,
+                    or a partner your perspective helps us raise the bar and continue delivering the standard of
+                    excellence we hold ourselves to.
+                </p>
+
+                <!-- Small trust note -->
+                <div class="flex items-center gap-3 mt-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#203C47]"></div>
+                    <span class="text-[#203C47]/45 text-xs">All feedback is reviewed by our senior team</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== END FEEDBACK SECTION ===================== -->
+
+    <!-- ===================== CONTACT INFO STRIP ===================== -->
+    <section class="relative bg-white w-full">
+
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-10 md:gap-0 px-10 py-16">
+
+            <!-- Column 1: Call Us -->
+            <div class="flex flex-col items-start gap-4 flex-1">
+                <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0"
+                    style="background-color: #203C47;">
+                    <img src="/assets/icons/phone-call (3).png" alt="Call Us" class="w-5 h-5 object-contain" />
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h4 class="text-[#203C47] font-semibold text-sm uppercase tracking-widest">Call Us</h4>
+                    <p class="text-[#203C47]/55 text-sm leading-relaxed">+1 (000) 000-0000</p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="hidden md:block w-px bg-gray-100 self-stretch mx-10"></div>
+            <div class="block md:hidden w-full border-t border-gray-100"></div>
+
+            <!-- Column 2: Email Us -->
+            <div class="flex flex-col items-start gap-4 flex-1">
+                <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0"
+                    style="background-color: #203C47;">
+                    <img src="/assets/icons/mail (1).png" alt="Email Us" class="w-5 h-5 object-contain" />
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h4 class="text-[#203C47] font-semibold text-sm uppercase tracking-widest">Email Us</h4>
+                    <p class="text-[#203C47]/55 text-sm leading-relaxed">info@inziragroup.com</p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="hidden md:block w-px bg-gray-100 self-stretch mx-10"></div>
+            <div class="block md:hidden w-full border-t border-gray-100"></div>
+
+            <!-- Column 3: Find Us -->
+            <div class="flex flex-col items-start gap-4 flex-1">
+                <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0"
+                    style="background-color: #203C47;">
+                    <img src="/assets/icons/location (4).png" alt="Find Us" class="w-5 h-5 object-contain" />
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h4 class="text-[#203C47] font-semibold text-sm uppercase tracking-widest">Find Us</h4>
+                    <p class="text-[#203C47]/55 text-sm leading-relaxed">
+                        267 Kentlands Boulevard PMB #5142<br />
+                        Gaithersburg, MD 20878<br />
+                        United States
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== END CONTACT INFO STRIP ===================== -->
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="relative w-full pb-10 px-10" style="background-color: #1C343D;">
+
+        <div class="flex flex-col gap-12 pt-16">
+
+            <!-- Top: Logo + Nav + Socials -->
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+
+                <!-- Logo + Tagline -->
+                <div class="flex flex-col gap-3 max-w-xs">
+                    <a href="/index.html"
+                        class="flex font-display items-center gap-2 text-brand-cream font-semibold text-xl tracking-wide">
+                        INZIRA GROUP
+                    </a>
+                    <p class="text-white/50 text-sm leading-relaxed">
+                        Find Your Future, Anywhere. Connecting exceptional talent with forward-thinking organizations
+                        across global markets.
+                    </p>
+                </div>
+
+                <!-- Nav Links -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Navigation</span>
+                    <a href="/about.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">About</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Services</a>
+                    <a href="/approach.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Approach</a>
+                    <a href="/blogs.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
+                </div>
+
+                <!-- Services -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Services</span>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Talent
+                        Placement</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Executive
+                        Search</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Career
+                        Coaching</a>
+                    <a href="/services.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Training &
+                        Development</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="flex flex-col gap-3">
+                    <span class="text-white/30 text-xs uppercase tracking-widest font-medium">Contact</span>
+                    <a href="mailto:admin@inziragroup.com"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">info@inziragroup.com</a>
+                    <a href="/contact.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Work
+                        With
+                        Us</a>
+                    <a href="/contact.html"
+                        class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">General
+                        Inquiries</a>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-white/10"></div>
+
+            <!-- Bottom: Copyright -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-xs">© 2026 Inzira Group. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Privacy
+                        Policy</a>
+                    <a href="#" class="text-white/30 text-xs hover:text-white/60 transition-colors duration-200">Terms
+                        of Use</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- ===================== END FOOTER ===================== -->
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
