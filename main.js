@@ -63,22 +63,22 @@ const serviceData = [
     {
         title: "Permanent & Contract Placement",
         description: "We partner with exceptional talent to deliver permanent and contract staffing solutions grounded in speed, compliance, and measurable performance outcomes. From initial role scoping through onboarding integration, we operate as a strategic talent partner  not a transactional search firm.",
-        image: "/assets/img/inzira-2.png"
+        image: "/assets/img/newOne.webp"
     },
     {
         title: "Executive Search",
         description: "We deliver transformational leaders equipped to drive organizational growth, transformation, and long-term enterprise value. Every engagement is executed with precision, discretion, and a long-term value creation lens.",
-        image: "/assets/img/inzira-3.png"
+        image: "/assets/img/newTwo.webp"
     },
     {
         title: "Career Coaching",
         description: "We provide structured, personalized career advisory services to university students, mid-level professionals, and senior executives navigating critical transition points  equipping clients to compete effectively in both U.S. and international markets.",
-        image: "/assets/img/inzira-4.png"
+        image: "/assets/img/newThree.webp"
     },
     {
         title: "Training & Development",
         description: "We design and deliver high-impact training programs, executive seminars, and workforce development workshops that equip professionals with the skills, insight, and strategic confidence required to perform in dynamic, evolving industries.",
-        image: "/assets/img/inzira-3.png"
+        image: "/assets/img/newFour.webp"
     }
 ];
 
@@ -133,32 +133,32 @@ const valuesData = [
     {
         title: "Integrity",
         description: "We operate with transparency and ethical responsibility, ensuring trust in every partnership we build.",
-        image: "/assets/img/inzira-2.png"
+        image: "/assets/img/newEight.webp"
     },
     {
         title: "Excellence",
         description: "We are committed to delivering high-quality recruitment and talent development solutions that meet international standards.",
-        image: "/assets/img/inzira-3.png"
+        image: "/assets/img/newSeven.webp"
     },
     {
         title: "Global Mindset",
         description: "We embrace diversity and innovation, preparing professionals and organizations to succeed in a borderless world.",
-        image: "/assets/img/inzira-4.png"
+        image: "/assets/img/newOne.webp"
     },
     {
         title: "Empowerment",
         description: "We connect talent to opportunity, creating lasting impact through accountability and long-term partnerships.",
-        image: "/assets/img/what.webp"
+        image: "/assets/img/newFive.webp"
     },
     {
         title: "Innovation",
         description: "We leverage forward-thinking strategies and market intelligence to stay ahead in an ever-evolving global landscape.",
-        image: "/assets/img/inzira-2.png"
+        image: "/assets/img/newFour.webp"
     },
     {
         title: "Accountability",
         description: "We take ownership of every engagement, measuring success by the lasting impact we create for clients and talent alike.",
-        image: "/assets/img/inzira-4.png"
+        image: "/assets/img/newThree.webp"
     }
 ];
 

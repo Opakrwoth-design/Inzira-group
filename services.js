@@ -63,22 +63,22 @@ const serviceData = [
     {
         title: "Permanent & Contract Talent Placement",
         description: "We partner with exceptional talent to deliver permanent and contract staffing solutions grounded in speed, compliance, and measurable performance outcomes. From initial role scoping through onboarding integration, we operate as a strategic talent partner not a transactional search firm.",
-        image: "/assets/img/inzira-2.png"
+        image: "/assets/img/newOne.webp"
     },
     {
         title: "Executive Search",
         description: "We deliver transformational leaders equipped to drive organizational growth, transformation, and long-term enterprise value. Every engagement is executed with precision, discretion, and a long-term value creation lens.",
-        image: "/assets/img/inzira-3.png"
+        image: "/assets/img/newTwo.webp"
     },
     {
         title: "Career Coaching",
         description: "We provide structured, personalized career advisory services to university students, mid-level professionals, and senior executives navigating critical transition points equipping clients to compete effectively in both U.S. and international markets.",
-        image: "/assets/img/inzira-4.png"
+        image: "/assets/img/newThree.webp"
     },
     {
         title: "Training & Development",
         description: "We design and deliver high-impact training programs, executive seminars, and workforce development workshops that equip professionals with the skills, insight, and strategic confidence required to perform in dynamic, evolving industries.",
-        image: "/assets/img/inzira-3.png"
+        image: "/assets/img/newFour.webp"
     }
 ];
 

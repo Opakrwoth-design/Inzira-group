@@ -123,35 +123,35 @@ if (accordions.length > 0 && svcImage) {
 
 // ===== VALUES CAROUSEL =====
 const valuesData = [
-    {
+     {
         title: "Integrity",
         description: "We operate with transparency and ethical responsibility, ensuring trust in every partnership we build.",
-        image: "/assets/img/what.webp"
+        image: "/assets/img/newEight.webp"
     },
     {
         title: "Excellence",
         description: "We are committed to delivering high-quality recruitment and talent development solutions that meet international standards.",
-        image: "/assets/img/inzira-2.png"
+        image: "/assets/img/newSeven.webp"
     },
     {
         title: "Global Mindset",
         description: "We embrace diversity and innovation, preparing professionals and organizations to succeed in a borderless world.",
-        image: "/assets/img/inzira-3.png"
+        image: "/assets/img/newOne.webp"
     },
     {
         title: "Empowerment",
         description: "We connect talent to opportunity, creating lasting impact through accountability and long-term partnerships.",
-        image: "/assets/img/inzira-4.png"
+        image: "/assets/img/newFive.webp"
     },
     {
         title: "Innovation",
         description: "We leverage forward-thinking strategies and market intelligence to stay ahead in an ever-evolving global landscape.",
-        image: "/assets/img/inzira-2.png"
+        image: "/assets/img/newFour.webp"
     },
     {
         title: "Accountability",
         description: "We take ownership of every engagement, measuring success by the lasting impact we create for clients and talent alike.",
-        image: "/assets/img/what.webp"
+        image: "/assets/img/newThree.webp"
     }
 ];
 
