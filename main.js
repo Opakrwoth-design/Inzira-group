@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
         navbar.style.top = '0';
         navbar.style.left = '0';
         navbar.style.width = '100%';
-        navbar.style.backgroundColor = '#1C343D';
+        navbar.style.backgroundColor = '#103521';
         navbar.style.backdropFilter = 'blur(12px)';
         navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
         navbar.style.zIndex = '50';
@@ -90,11 +90,11 @@ const serviceImage = document.getElementById('service-image');
 function activateTab(index) {
     tabs.forEach((tab, i) => {
         if (i === index) {
-            tab.style.backgroundColor = '#1C343D';
+            tab.style.backgroundColor = '#103521';
             tab.querySelector('span').style.color = '#ffffff';
         } else {
             tab.style.backgroundColor = 'transparent';
-            tab.querySelector('span').style.color = '#1C343D';
+            tab.querySelector('span').style.color = '#103521';
         }
     });
 
@@ -179,7 +179,7 @@ function buildValueCard(value) {
 
             <!-- Hover Overlay -->
             <div class="absolute inset-0 flex flex-col justify-end p-6 transition-all duration-400"
-                style="background: linear-gradient(to top, #2D4F52 0%, rgba(28,52,89,0.3) 60%, transparent 100%);
+                style="background: linear-gradient(to top, #2a5a3b 0%, rgba(28,52,89,0.3) 60%, transparent 100%);
                        opacity: 0; transform: translateY(10px);"
                 data-overlay>
                 <h4 class="text-white font-semibold text-xl mb-2">${value.title}</h4>

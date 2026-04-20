@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
   if (scrolled) {
     // Dark green background
     navbar.classList.remove("bg-white");
-    navbar.classList.add("bg-[#1C343D]");
+    navbar.classList.add("bg-[#103521]");
 
     // Logo text color → white
     navLogo.classList.remove("text-[#20324A]");
@@ -56,7 +56,7 @@ window.addEventListener("scroll", () => {
   } else {
     // Restore white background
     navbar.classList.add("bg-white");
-    navbar.classList.remove("bg-[#1C343D]");
+    navbar.classList.remove("bg-[#103521]");
 
     // Logo text color → dark
     navLogo.classList.add("text-[#20324A]");
