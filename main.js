@@ -15,6 +15,7 @@ fadeElements.forEach(el => observer.observe(el));
 
 // ===== NAVBAR: Sticky + Background change on scroll =====
 const navbar = document.getElementById('navbar');
+const navLogoImg = document.getElementById('nav-logo');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 60) {
@@ -26,14 +27,24 @@ window.addEventListener('scroll', () => {
         navbar.style.backdropFilter = 'blur(12px)';
         navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
         navbar.style.zIndex = '50';
+
+        // Logo stays white (already white on dark hero, keep it white on dark scrolled navbar)
+        if (navLogoImg) {
+            navLogoImg.src = navLogoImg.dataset.logoDefault; // Inz.png (white logo)
+        }
+
     } else {
         navbar.style.position = 'relative';
         navbar.style.backgroundColor = 'transparent';
         navbar.style.backdropFilter = 'none';
         navbar.style.boxShadow = 'none';
+
+        // Back to white logo (dark hero background behind it)
+        if (navLogoImg) {
+            navLogoImg.src = navLogoImg.dataset.logoDefault; // Inz.png (white logo)
+        }
     }
 });
-
 
 // ===== HAMBURGER MENU TOGGLE =====
 const hamburgerBtn = document.getElementById('hamburger-btn');
