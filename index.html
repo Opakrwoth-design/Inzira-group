@@ -135,13 +135,12 @@
         <nav id="navbar" class="relative z-20 w-full transition-all duration-300">
             <div class="flex items-center justify-between px-10 py-5">
 
-                
+
                 <!-- Left: Logo Image -->
                 <a href="/index.html" class="fade-up delay-1 flex items-center shrink-0 z-10">
-
-                    <img src="/assets/icons/Inz.png" alt="Inzira Group Logo"
+                    <img id="nav-logo" src="/assets/icons/Inz.png" data-logo-default="/assets/icons/Inz.png"
+                        data-logo-scrolled="/assets/icons/Inz two.png" alt="Inzira Group Logo"
                         class="w-44 md:w-44 lg:w-44 object-contain">
-
                 </a>
 
                 <!-- Middle: Nav Links (Desktop) -->
@@ -304,7 +303,8 @@
 
                 <!-- Right: Description -->
                 <div class="fade-up delay-5 flex flex-col justify-center flex-1">
-                    <p style="line-height: 2rem;" class="text-brand-blue1000/70 text-sm md:text-base font-normal leading-relaxed">
+                    <p style="line-height: 2rem;"
+                        class="text-brand-blue1000/70 text-sm md:text-base font-normal leading-relaxed">
                         As a boutique firm, we operate with intention. We engage selectively, provide direct
                         senior-level involvement, and deliver tailored solutions grounded in market intelligence and
                         regional expertise.
@@ -831,8 +831,7 @@
 
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="assets/img/imo.jpeg" alt="Footer Background"
-                class="w-full h-full object-cover object-center" />
+            <img src="assets/img/imo.jpeg" alt="Footer Background" class="w-full h-full object-cover object-center" />
             <!-- Dark overlay for readability -->
             <div class="absolute inset-0 bg-[#1C343D]/85"></div>
         </div>
@@ -881,7 +880,7 @@
                         class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">About</a>
                     <a href="/services.html"
                         class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Services</a>
-   
+
                     <a href="/blogs.html"
                         class="text-white/60 text-sm hover:text-[#E8A94A] transition-colors duration-200">Insights</a>
                 </div>
