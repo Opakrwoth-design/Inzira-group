@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover how connecting the right talent to the right opportunity across borders is reshaping the future of work — and what it means for your organization." />
+    <link rel="icon" href="/assets/icons/Inzira Group.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ["Cinzel", "serif"],
+                        sans: ["'Public Sans'", "sans-serif"],
+                    },
+                    colors: {
+                        brand: {
+                            cream: "#f5f1ed",
+                            gold: "#E8A94A",
+                            dark: "#1C343D",
+                            navy: "#20324A",
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            background-color: #faf9f7;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            line-height: 1.85;
+            color: #2e3a47;
+            font-size: 1rem;
+        }
+
+        .section-heading {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #103521;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e8a94a;
+            display: inline-block;
+        }
+
+        .stat-card {
+            background: white;
+            border: 1px solid rgba(32, 50, 74, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .bullet-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.25rem 1.5rem;
+            background: white;
+            border-radius: 0.875rem;
+            border: 1px solid rgba(32, 50, 74, 0.08);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+            margin-bottom: 0.75rem;
+        }
+
+        .bullet-icon {
+            width: 8px;
+            height: 8px;
+            min-width: 8px;
+            background-color: #e8a94a;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+
+        .quote-block {
+            border-left: 4px solid #e8a94a;
+            background: white;
+            padding: 1.5rem 2rem;
+            border-radius: 0 1rem 1rem 0;
+            margin: 2rem 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .quote-block p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #1c343d !important;
+            margin-bottom: 0 !important;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition:
+                opacity 0.6s ease,
+                transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <title>The Power of Global Workforce Solutions - Inzira Group</title>
+</head>
+
+<body class="font-sans">
+    <!-- ===== TOP BAR ===== -->
+    <div class="w-full border-b border-[#20324A]/10 bg-white px-6 md:px-16 py-4 flex items-center justify-between">
+        <a href="/blogs.html" class="flex items-center gap-2 text-[#20324A]/60 text-sm hover:text-[#E8A94A] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Insights
+        </a>
+        <a href="/index.html">
+            <img src="/assets/icons/Inz-two.png" alt="Inzira Group Logo" class="w-32 object-contain" />
+        </a>
+    </div>
+    <!-- ===== END TOP BAR ===== -->
+
+    <!-- ===== ARTICLE HERO ===== -->
+    <div class="bg-white px-6 md:px-16 pt-7 pb-6 border-b border-[#20324A]/10">
+        <div class="max-w-3xl mx-auto">
+            <!-- Tag + read time -->
+            <div class="flex items-center gap-3 mb-3 fade-up">
+                <span
+                    class="text-xs font-semibold px-3 py-1 rounded-full bg-[#E8A94A]/10 text-[#E8A94A] uppercase tracking-wide">
+                    WORKFORCE INSIGHTS
+                </span>
+                <span class="text-[#20324A]/40 text-xs">·</span>
+                <span class="text-[#20324A]/50 text-xs">5 min read</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="font-display text-[#103521] text-2xl md:text-3xl font-bold leading-tight mb-3 fade-up">
+                The Power of Global Workforce Solutions
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-[#20324A]/70 text-sm md:text-base leading-relaxed fade-up">
+                How connecting the right talent to the right opportunity across
+                borders is reshaping the future of work.
+            </p>
+        </div>
+    </div>
+    <!-- ===== END ARTICLE HERO ===== -->
+
+    <!-- ===== ARTICLE BODY ===== -->
+    <div class="px-6 md:px-16 py-14 max-w-3xl mx-auto article-body">
+        <!-- Intro -->
+        <p class="fade-up">
+            In a world that has never been more interconnected, the way
+            organisations build their teams has changed permanently. Geography is no
+            longer a constraint it is an opportunity. Companies that understand this
+            are not just surviving in competitive markets; they are defining them.
+        </p>
+        <p class="fade-up">
+            Every organisation deserves access to the best talent the world has to
+            offer and every professional deserves access to opportunities without
+            borders. This is the fundamental promise of global workforce solutions.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-10 fade-up">
+            <div class="stat-card">
+                <p class="text-3xl font-bold text-[#103521]" style="margin-bottom: 0.25rem !important">
+                    3.5B+
+                </p>
+                <p class="text-[#20324A]/60 text-sm leading-snug" style="margin-bottom: 0 !important">
+                    People in the global workforce today
+                </p>
+            </div>
+            <div class="stat-card">
+                <p class="text-3xl font-bold text-[#E8A94A]" style="margin-bottom: 0.25rem !important">
+                    87%
+                </p>
+                <p class="text-[#20324A]/60 text-sm leading-snug" style="margin-bottom: 0 !important">
+                    Of employers report talent shortages
+                </p>
+            </div>
+            <div class="stat-card">
+                <p class="text-3xl font-bold text-[#103521]" style="margin-bottom: 0.25rem !important">
+                    70%
+                </p>
+                <p class="text-[#20324A]/60 text-sm leading-snug" style="margin-bottom: 0 !important">
+                    Of jobs will require new skills by 2030
+                </p>
+            </div>
+        </div>
+
+        <!-- Section: Career Coaching -->
+        <h2 class="section-heading fade-up">
+            Why global talent matters more than ever
+        </h2>
+        <p class="fade-up">
+            The talent landscape has shifted dramatically. Domestic talent pools,
+            while valuable, are increasingly insufficient for organisations with
+            ambitious growth targets. Skills gaps are widening across industries
+            from technology and engineering to healthcare, finance, and professional
+            services.
+        </p>
+        <p class="fade-up">
+            Global workforce solutions bridge this gap. By tapping into international talent markets, organisations
+            gain access to diverse skill sets, fresh perspectives, and the agility needed to scale quickly and
+            responsibly. The result is not just a filled vacancy — it is a competitive advantage built into the very
+            fabric of the organisation.
+        </p>
+
+        <div class="quote-block fade-up">
+            <p>
+                &quot;The organisations winning today are those bold enough to look beyond their
+                borders and smart enough to partner with the right people to do it.&quot;
+            </p>
+        </div>
+
+        <!-- Section: Resume Review -->
+        <h2 class="section-heading fade-up">
+            What global workforce solutions actually deliver
+        </h2>
+        <p class="fade-up">
+            A true global workforce partner does far more than source candidates. A comprehensive approach
+            encompasses the entire employment lifecycle from talent identification and recruitment to
+            workforce planning, compliance management, and long-term retention strategies.
+        </p>
+
+        <div class="my-6 fade-up">
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important">
+                        Access to a wider talent pool
+                    </p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important">
+                        Connect organisations with qualified professionals across continents, ensuring the best person
+                        for
+                        the role is considered, regardless of where they are based.
+                    </p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important">
+                        Reduced time-to-hire
+                    </p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important">
+                        Global networks and established pipelines significantly compress recruitment timelines, so
+                        critical
+                        roles are filled faster without compromising quality.
+                    </p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important">
+                        Compliance and risk management
+                    </p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important">
+                        Navigating international labour law, immigration requirements, and payroll regulations is
+                        complex
+                        the right partner handles it so clients can focus on their core business.
+                    </p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important">
+                        Cultural intelligence
+                    </p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important">
+                        Placing the right person is not just about skills. Understanding the cultural and organisational
+                        dynamics makes international placements successful for both the employer and the employee.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Resume Writing -->
+        <h2 class="section-heading fade-up">
+            The difference a strategic partner makes
+        </h2>
+        <p class="fade-up">
+            The most effective workforce partners are not simply filling open roles they are architects of
+            organisational journeys, building pathways that connect ambition with opportunity on a global scale.
+        </p>
+        <p class="fade-up">
+            The most effective workforce partners are not simply filling open roles they are architects of
+            organisational journeys, building pathways that connect ambition with opportunity on a global scale.
+        </p>
+        <p class="fade-up">
+            Whether you are a multinational organisation looking to build a high-performing team across multiple
+            markets, or a fast-growing business entering new territories, the right workforce partner brings the
+            expertise, the network, and the commitment to make it happen.
+        </p>
+
+        <div class="quote-block fade-up">
+            <p>
+                "We don't just fill roles we build workforces that move organisations forward, wherever in the world
+                they need to go."
+            </p>
+        </div>
+
+        <!-- Section: Who We Work With -->
+        <h2 class="section-heading fade-up">The future of work is borderless</h2>
+        <p class="fade-up">
+            Remote work, digital transformation, and shifting economic centres of gravity have made the concept of a
+            "local hire" increasingly outdated for many industries. Forward-looking organisations are embracing
+            workforce models that are flexible, global, and resilient.
+        </p>
+        <p class="fade-up">
+            The question for business leaders is no longer whether to think globally about their workforce it is
+            how quickly they can act on it. Those who move early with the right partners build talent advantages
+            that compound over time.
+        </p>
+        <p class="fade-up">
+            Our mission is to remove every barrier between great organisations and the talent they need
+            across borders, across industries, and across every stage of growth.
+        </p>
+
+
+
+        <!-- Footer credit -->
+        <div class="mt-10 pt-8 border-t border-[#20324A]/10 text-center fade-up">
+            <p class="text-[#20324A]/40 text-xs">
+                © 2026 Inzira Group · inziragroup.com · info@inziragroup.com
+            </p>
+        </div>
+    </div>
+    <!-- ===== END ARTICLE BODY ===== -->
+
+    <script>
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((e) => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add("visible");
+                        observer.unobserve(e.target);
+                    }
+                });
+            },
+            { threshold: 0.1 },
+        );
+
+        document
+            .querySelectorAll(".fade-up")
+            .forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>

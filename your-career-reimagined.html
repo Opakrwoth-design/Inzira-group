@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover how expert career coaching, resume reviews, and professional resume writing can unlock opportunities you didn't know were possible." />
+    <link rel="icon" href="/assets/icons/Inzira Group.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ["Cinzel", "serif"],
+                        sans: ["'Public Sans'", "sans-serif"],
+                    },
+                    colors: {
+                        brand: {
+                            cream: "#f5f1ed",
+                            gold: "#E8A94A",
+                            dark: "#1C343D",
+                            navy: "#20324A",
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            background-color: #faf9f7;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            line-height: 1.85;
+            color: #2e3a47;
+            font-size: 1rem;
+        }
+
+        .section-heading {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #103521;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #E8A94A;
+            display: inline-block;
+        }
+
+        .stat-card {
+            background: white;
+            border: 1px solid rgba(32, 50, 74, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .bullet-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.25rem 1.5rem;
+            background: white;
+            border-radius: 0.875rem;
+            border: 1px solid rgba(32, 50, 74, 0.08);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+            margin-bottom: 0.75rem;
+        }
+
+        .bullet-icon {
+            width: 8px;
+            height: 8px;
+            min-width: 8px;
+            background-color: #E8A94A;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+
+        .quote-block {
+            border-left: 4px solid #E8A94A;
+            background: white;
+            padding: 1.5rem 2rem;
+            border-radius: 0 1rem 1rem 0;
+            margin: 2rem 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .quote-block p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #1C343D !important;
+            margin-bottom: 0 !important;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <title>Your Career, Reimagined - Inzira Group</title>
+</head>
+
+<body class="font-sans">
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="w-full border-b border-[#20324A]/10 bg-white px-6 md:px-16 py-4 flex items-center justify-between">
+        <a href="/blogs.html" class="flex items-center gap-2 text-[#20324A]/60 text-sm hover:text-[#E8A94A] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Insights
+        </a>
+        <a href="/index.html">
+            <img src="/assets/icons/Inz-two.png" alt="Inzira Group Logo" class="w-32 object-contain" />
+        </a>
+    </div>
+    <!-- ===== END TOP BAR ===== -->
+
+    <!-- ===== ARTICLE HERO ===== -->
+    <div class="bg-white px-6 md:px-16 pt-7 pb-6 border-b border-[#20324A]/10">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- Tag + read time -->
+            <div class="flex items-center gap-3 mb-3 fade-up">
+                <span
+                    class="text-xs font-semibold px-3 py-1 rounded-full bg-[#E8A94A]/10 text-[#E8A94A] uppercase tracking-wide">
+                    Career Insights
+                </span>
+                <span class="text-[#20324A]/40 text-xs">·</span>
+                <span class="text-[#20324A]/50 text-xs">5 min read</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="font-display text-[#103521] text-2xl md:text-3xl font-bold leading-tight mb-3 fade-up">
+                Your Career, Reimagined.
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-[#20324A]/70 text-sm md:text-base leading-relaxed fade-up">
+                How expert career coaching, resume reviews, and professional resume writing unlock
+                opportunities you didn't know were possible.
+            </p>
+
+        </div>
+    </div>
+    <!-- ===== END ARTICLE HERO ===== -->
+
+    <!-- ===== ARTICLE BODY ===== -->
+    <div class="px-6 md:px-16 py-14 max-w-3xl mx-auto article-body">
+
+        <!-- Intro -->
+        <p class="fade-up">
+            The job market has never been more competitive or more full of opportunity for those who know
+            how to navigate it. The difference between a candidate who lands interviews and one who doesn't
+            often comes down to a single thing: how well they present themselves on paper and in person.
+        </p>
+        <p class="fade-up">
+            At Inzira Group, our career coaching, resume review, and resume writing services are designed
+            to close that gap. We work with students entering the workforce, professionals seeking a change,
+            and experienced leaders ready for their next chapter giving each person the tools, clarity,
+            and confidence to move forward.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-10 fade-up">
+            <div class="stat-card">
+                <p class="text-3xl font-bold text-[#103521]" style="margin-bottom: 0.25rem !important;">75%</p>
+                <p class="text-[#20324A]/60 text-sm leading-snug" style="margin-bottom: 0 !important;">Of professionals
+                    feel stuck in their current career path</p>
+            </div>
+            <div class="stat-card">
+                <p class="text-3xl font-bold text-[#E8A94A]" style="margin-bottom: 0.25rem !important;">3x</p>
+                <p class="text-[#20324A]/60 text-sm leading-snug" style="margin-bottom: 0 !important;">More interviews
+                    landed with a professionally written resume</p>
+            </div>
+            <div class="stat-card">
+                <p class="text-3xl font-bold text-[#103521]" style="margin-bottom: 0.25rem !important;">60%</p>
+                <p class="text-[#20324A]/60 text-sm leading-snug" style="margin-bottom: 0 !important;">Of resumes are
+                    rejected before a human ever reads them</p>
+            </div>
+        </div>
+
+        <!-- Section: Career Coaching -->
+        <h2 class="section-heading fade-up">Career Coaching - Finding Your Direction</h2>
+        <p class="fade-up">
+            A career coach does more than offer advice. The right coach helps you understand where you are,
+            where you want to go, and - critically - how to get there. Whether you are a recent graduate
+            navigating your first steps or a seasoned professional feeling overdue for a change, intentional
+            coaching changes the trajectory.
+        </p>
+        <p class="fade-up">
+            Our career coaching sessions are personalized, practical, and grounded in a real understanding
+            of how today's job market works. We help you identify your strengths, clarify your goals, and
+            build a strategy that is specific to you - not a generic roadmap that could apply to anyone.
+        </p>
+
+        <div class="quote-block fade-up">
+            <p>"Clarity is the foundation of every successful career move. When you know exactly what you want and how
+                to ask for it, everything changes."</p>
+        </div>
+
+        <!-- Section: Resume Review -->
+        <h2 class="section-heading fade-up">Resume Review - A Professional Eye on Your Story</h2>
+        <p class="fade-up">
+            Most professionals underestimate how much their resume is holding them back. A resume review
+            is not just a proofread - it is a strategic assessment of whether your document is positioned
+            to compete in today's market.
+        </p>
+
+        <div class="my-6 fade-up">
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">First impressions matter</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">Recruiters
+                        spend an average of 6–7 seconds scanning a resume. A professional review ensures yours makes an
+                        immediate, compelling impression.</p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">ATS optimization</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">Most companies
+                        use applicant tracking systems to filter resumes before a human sees them. We ensure your resume
+                        is structured to pass through - and stand out on the other side.</p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">Targeted feedback</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">You receive
+                        specific, actionable guidance on layout, language, skills positioning, and how to tailor your
+                        resume for the roles you are actually targeting.</p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">Competitive benchmarking</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">We assess your
+                        resume against what hiring managers in your industry are actually looking for - so you know
+                        exactly where you stand and what to strengthen.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Resume Writing -->
+        <h2 class="section-heading fade-up">Resume Writing - Your Story, Told Professionally</h2>
+        <p class="fade-up">
+            A professionally written resume is one of the highest-return investments a job seeker can make.
+            It is not about embellishment - it is about presenting your real experience, skills, and
+            achievements in the language that hiring managers respond to.
+        </p>
+        <p class="fade-up">
+            Our resume writers take the time to understand your background, your target roles, and what
+            makes you uniquely qualified. The result is a document that is clean, compelling, and built
+            to open doors - from the first ATS scan to the hiring manager's desk.
+        </p>
+        <p class="fade-up">
+            Whether you are starting from scratch, refreshing an outdated resume, or pivoting into a new
+            industry entirely, we craft a resume that positions you exactly where you want to be.
+        </p>
+
+        <div class="quote-block fade-up">
+            <p>"Your resume is not just a list of jobs. It is the opening argument for why you are the right person for
+                the role - and it should be written that way."</p>
+        </div>
+
+        <!-- Section: Who We Work With -->
+        <h2 class="section-heading fade-up">Who We Work With</h2>
+        <p class="fade-up">
+            Our career services are built for professionals at every stage - from students stepping into
+            their first role to executives navigating complex transitions. If you have a goal, we have a
+            path to get you there.
+        </p>
+
+        <div class="my-6 fade-up">
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">Students & Recent Graduates</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">Build a strong
+                        foundation from the start - with a resume that reflects your potential and coaching that helps
+                        you enter the market with confidence.</p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">Mid-Career Professionals</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">Refresh your
+                        positioning, sharpen your story, and make sure your resume reflects the professional you have
+                        become - not just the jobs you have held.</p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">Career Changers</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">We help you
+                        identify transferable skills, reframe your experience, and build a resume that makes a
+                        compelling case for your transition into a new field.</p>
+                </div>
+            </div>
+            <div class="bullet-item">
+                <div class="bullet-icon"></div>
+                <div>
+                    <p class="text-[#20324A] font-semibold"
+                        style="font-size: 0.95rem; margin-bottom: 0.25rem !important;">Senior Leaders & Executives</p>
+                    <p class="text-[#20324A]/70" style="font-size: 0.95rem; margin-bottom: 0 !important;">
+                        Executive-level resume writing and coaching that reflects the depth of your leadership,
+                        communicates strategic impact, and opens doors at the top.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer credit -->
+        <div class="mt-10 pt-8 border-t border-[#20324A]/10 text-center fade-up">
+            <p class="text-[#20324A]/40 text-xs">© 2026 Inzira Group · inziragroup.com · info@inziragroup.com</p>
+        </div>
+
+    </div>
+    <!-- ===== END ARTICLE BODY ===== -->
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>
